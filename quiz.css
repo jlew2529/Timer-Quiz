@@ -1,0 +1,94 @@
+/* Quiz CSS */
+body {
+    font-family: sans-serif;
+    background: black;
+}
+
+h1 {
+    color: white;
+}
+
+.container {
+    height: 330px;
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: rgba(225, 225,225, 0.5);
+    padding: 20px;
+    border: 1px solid red;
+    box-shadow: 0 0 8px 3px #ffff;
+}
+
+.title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: red;
+}
+
+.question {
+    padding: 20px;
+    font-size: 22px;
+    background: red;
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+    color: #f6f6f6;
+}
+
+.option {
+    width: 470px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background: rgba(225, 225,225, 0.5);
+    margin: 10px 0 10px 10px;
+    color: #000000;
+    border-radius: 20px;
+}
+
+.option:hover {
+    background: red;
+    color: #f6f6f6;
+}
+
+.start-Btn {
+    border: none;
+    outline: none;
+    background: red;
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.next-Btn {
+    border: none;
+    outline: none;
+    background: red;
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+    margin: 10px;
+}
+
+.next-Btn:hover {
+    background: red;
+    color: #f6f6f6;
+}
+
+.result {
+    height: 100px;
+    text-align: center;
+    font-size: 75px;
+}
+
+.option input:checked .option {
+    background: red;
+    color: #000000;
+}
